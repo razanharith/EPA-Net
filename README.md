@@ -3,8 +3,8 @@
 This is the official implementation of the proposed model in the paper "EPA_Net: An Efficient Pyramid Attention for Skin Lesion Segmentation".
 
 The model was trained and tested on three dataset :
-1. ISIC -2017 : https://www.kaggle.com/datasets/mahmudulhasantasin/isic-2017-original-dataset
-2. ISIC -2018 : https://www.kaggle.com/datasets/tschandl/isic2018-challenge-task1-data-segmentation
+1. ISIC-2017 : https://www.kaggle.com/datasets/mahmudulhasantasin/isic-2017-original-dataset
+2. ISIC-2018 : https://www.kaggle.com/datasets/tschandl/isic2018-challenge-task1-data-segmentation
 3. PH2 : https://www.kaggle.com/datasets/spacesurfer/ph2-dataset
 
 # Archirecture:
@@ -12,7 +12,7 @@ The model was trained and tested on three dataset :
 
 
 # Requirements
-- python 3.11.7
+- python 3.7.5
 - pytorch 2.2.0
 - opencv 4.9.0
 - numpy 1.26.4
