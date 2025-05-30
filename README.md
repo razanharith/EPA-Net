@@ -7,3 +7,10 @@ The model was trained and tested on three dataset :
 2. ISIC -2018 : https://www.kaggle.com/datasets/tschandl/isic2018-challenge-task1-data-segmentation
 3. PH2 : https://www.kaggle.com/datasets/spacesurfer/ph2-dataset
 
+**Requirements**
+python 3.11.7
+pytorch 2.2.0
+opencv 4.9.0
+numpy 1.26.4
+scipy 1.11.4
+matplotlib 3.8.0
