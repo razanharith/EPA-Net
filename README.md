@@ -1,4 +1,4 @@
-# EPA_Net: An-Efficient Pyramid Attention for Skin Lesion Segmentation
+# EPA_Net: An Efficient Pyramid Attention for Skin Lesion Segmentation
 
 This is the official implementation of the proposed model in the paper "EPA_Net: An Efficient Pyramid Attention for Skin Lesion Segmentation".
 
