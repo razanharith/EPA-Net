@@ -12,11 +12,11 @@ The model was trained and tested on three dataset :
 
 
 # Requirements
-python 3.11.7
-pytorch 2.2.0
-opencv 4.9.0
-numpy 1.26.4
-scipy 1.11.4
-matplotlib 3.8.0
+- python 3.11.7
+- pytorch 2.2.0
+- opencv 4.9.0
+- numpy 1.26.4
+- scipy 1.11.4
+- matplotlib 3.8.0
 
 # Cite this paper :
