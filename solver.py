@@ -6,17 +6,11 @@ from PIL import Image
 
 import torch
 
-from FAT_Net import FAT_Net
-from functions import  cross_entropy_loss_RCF
 import torchvision
-from UNet import U_Net
-from SegNet import SegNet
-from UNet_VGG import UNet_VGG
 from torch import optim
 from torch.autograd import Variable
 import torch.nn.functional as F
 from evaluation import *
-from swin_transformer import SwinTransformer
 from network import U_Net
 import cv2
 import segmentation_models_pytor as smp
@@ -24,11 +18,7 @@ import csv
 from misc import *
 import os
 import argparse
-from networks.vit_seg_modeling import VisionTransformer as ViT_seg
-from networks.vit_seg_modeling import CONFIGS as CONFIGS_ViT_seg
-from tensorboardX import SummaryWriter
-from network import R2U_Net,AttU_Net,R2AttU_Net
-# default `log_dir` is "runs" - we'll be more specific here
+
 writer = SummaryWriter('mylogdir')
 
 
