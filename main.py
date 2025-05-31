@@ -1,6 +1,6 @@
 import argparse
 import os
-from solver_old import Solver
+from solver import Solver
 from data_loader import get_loader
 from torch.backends import cudnn
 import random
@@ -41,8 +41,8 @@ def main(config):
 
     # Train and sample the images
     if config.mode == 'train':
-        for model in ['EPA_Net']:#['U_Net','UNet_vgg','UNet_vgg19', 'UNet_resnet18',  'UNet_resnet34', 'UNet_resnet50', 'UNet_resnet101', 'UNet_resnet152','efficientnet-b0','efficientnet-b1','efficientnet-b2','efficientnet-b3','efficientnet-b4','efficientnet-b5','efficientnet-b6','efficientnet-b7','UNet_densnet121','UNet_densnet169','UNet_densenet201','mobilenet_v2']: #[ 'UNet_vgg19', 'UNet_resnet18',  'UNet_resnet34', 'UNet_resnet50', 'UNet_resnet101', 'UNet_resnet152']
-            solver = Solver(config,model, train_loader, valid_loader, test_loader)
+        for model in ['EPA_Net']:
+		solver = Solver(config,model, train_loader, valid_loader, test_loader)
             for loss in ['BCE_Dice_mIoU']:
                 solver.train(loss=loss)
 
@@ -50,8 +50,7 @@ def main(config):
 
     elif config.mode == 'test':
 
-        for model in ['EPA_Net']:# ['efficientnet-b3','efficientnet-b4','efficientnet-b5','efficientnet-b6','efficientnet-b7']: #[ 'UNet_vgg19', 'UNet_resnet18',  'UNet_resnet34', 'UNet_resnet50', 'UNet_resnet101', 'UNet_resnet152']:
-
+        for model in ['EPA_Net']:
             solver = Solver(config, model, train_loader, valid_loader, test_loader)
 
             for loss in ['BCE_Dice_mIoU']:
