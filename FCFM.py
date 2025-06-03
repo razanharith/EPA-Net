@@ -2,9 +2,9 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 
-class FRCM(nn.Module):
+class FCFM(nn.Module):
     def __init__(self,ch_ins,ch_out,n_sides=11):
-        super(FRCM,self).__init__()
+        super(FCFM,self).__init__()
 
         self.reducers = nn.ModuleList([
             nn.Conv2d(ch_ins[0],ch_out,kernel_size=1),
