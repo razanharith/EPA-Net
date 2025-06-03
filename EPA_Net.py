@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
 from scipy.ndimage import gaussian_filter, laplace
-from FRCM import FRCM
+from FCFM import FCFM
 
 def gaussiankernel(ch_out, ch_in, kernelsize, sigma, kernelvalue):
     n = np.zeros((ch_out, ch_in, kernelsize, kernelsize))
@@ -241,7 +241,7 @@ class EPA_Net(nn.Module):
         self.PDAM2 = PDAM([128,128,128],96,32,0.025)
         self.PDAM1 = PDAM([96,96,96],64,12,0.05)
         
-        self.FRCM = FRCM(ch_ins=[96,96,128,128,128,192,192,192,192,64,320],ch_out=2)
+        self.FCFM = FCFM(ch_ins=[96,96,128,128,128,192,192,192,192,64,320],ch_out=2)
         
         self.sem3 = SEM(64+24, reduction=11)
         self.lastlayer = nn.Sequential(
@@ -303,7 +303,7 @@ class EPA_Net(nn.Module):
         x = self.PDAM1(x,i2,i1)
         x = self.dropout1(x)
         
-        sides = self.FRCM(img_shape,[i1,i2,i3,i4,i5,i6,i7,i8,i9,x,x1])
+        sides = self.FCFM(img_shape,[i1,i2,i3,i4,i5,i6,i7,i8,i9,x,x1])
         x = torch.cat([x,sides[0],sides[1],sides[2],sides[3],sides[4],sides[5],
                        sides[6],sides[7],sides[8],sides[9],sides[10],sides[11]],1)
         
