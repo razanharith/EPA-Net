@@ -21,7 +21,7 @@ EPA-Net achieves a balance between accuracy and efficiency through four speciali
 3. **Adaptive Dilation and Focus Module (ADFM):** Utilizes multi-scale dilated convolutions to focus on critical lesion characteristics without high computational cost.
 4. **Feature Compression and Fusion Module (FCFM):** Combines multi-scale features to prevent spatial information loss during down-sampling.
 
-![Framework](framework.jpg)
+![Framework](Framework.png)
 ---
 
 ## 📊 Performance Results
