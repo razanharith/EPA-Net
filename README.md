@@ -1,6 +1,6 @@
 # A Modular Attention Network for Skin Lesion Segmentation in Resource-Limited Clinical Settings
 
-This is the official implementation of the proposed model in the paper "EPA_Net: An Efficient Pyramid Attention for Skin Lesion Segmentation".
+This is the official implementation of the proposed model in the paper "A Modular Attention Network for Skin Lesion Segmentation in Resource-Limited Clinical Settings".
 
 The model was trained and tested on three dataset :
 1. ISIC-2017 : https://www.kaggle.com/datasets/mahmudulhasantasin/isic-2017-original-dataset
