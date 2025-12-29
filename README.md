@@ -4,15 +4,14 @@ This is the official implementation of EPA-Net (Efficient Pyramid Attention Netw
 
 **"A Modular Attention Network for Skin Lesion Segmentation in Resource-Limited Clinical Settings"**
 
-📄 **Paper:** [Link to be added]
-
-🚀 **Key Highlights:** 0.82M Parameters | 12.98 GFLOPs | 0.0333s Inference Time
+ **Submittied to:** [Cluster Computing]
+ **Key Highlights:** 0.82M Parameters | 12.98 GFLOPs | 0.0333s Inference Time
 
 EPA-Net is a novel modular framework designed to provide high-fidelity medical segmentation while remaining highly parameter-efficient (41x more efficient than H2Former), enabling AI-driven diagnosis on non-specialized hardware in rural or low-resource clinics.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 EPA-Net achieves a balance between accuracy and efficiency through four specialized modules:
 
@@ -24,7 +23,7 @@ EPA-Net achieves a balance between accuracy and efficiency through four speciali
 ![Framework](Framework.png)
 ---
 
-## 📊 Performance Results
+## Performance Results
 
 EPA-Net consistently outperforms state-of-the-art lightweight models across three public benchmarks.
 
@@ -44,7 +43,7 @@ EPA-Net excels at defining complex lesion structures with sharper boundaries and
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Requirements
 
@@ -103,7 +102,7 @@ ULS-MSA/
 ```
 ---
 
-## 🎯 Training
+## Training
 
 To train ULS-MSA on a specific dataset: 
 
@@ -127,7 +126,7 @@ python train.py --dataset PH2 --epochs 100 --batch_size 8
 
 ---
 
-## 🧪 Evaluation
+## Evaluation
 
 To evaluate a trained model:
 
@@ -144,13 +143,7 @@ This will compute:
 
 ---
 
-## 📝 Citation
 
-If you find this work useful for your research, please cite our manuscript:
-
----
-
-## ✉️ Contact
-
+## Contact
 **Razan Alharith** (Southwest Jiaotong University)  
 Email: razanalharith@my.swjtu.edu.cn
