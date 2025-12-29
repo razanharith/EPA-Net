@@ -121,7 +121,7 @@ python train.py --dataset PH2 --epochs 100 --batch_size 8
 ### Training Options
 - `--dataset`: Dataset name (ISIC2017, ISIC2018, PH2)
 - `--epochs`: Number of training epochs (default: 100)
-- `--batch_size`: Batch size (default: 16)
+- `--batch_size`: Batch size (default: 4)
 - `--lr`: Learning rate (default: 0.001)
 - `--save_path`: Path to save trained models
 
