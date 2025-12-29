@@ -65,11 +65,42 @@ EPA-Net excels at defining complex lesion structures with sharper boundaries and
 
 ## 📁 Dataset Preparation
 
-We employ three publicly available benchmarks. Please place them in the following directory structure:
+We employ three publicly available benchmarks for skin lesion segmentation: 
 
-- **ISIC-2017:** [ISIC-2017](https://www.kaggle.com/datasets/johnchfr/isic-2017/) (2,000 images)
-- **ISIC-2018:** [ISIC-2018]([https://www.kaggle.com/](https://www.kaggle.com/datasets/johnchfr/isic-2018)/) (3,694 images)
-- **PH2:** [PH2](https://www.kaggle.com/datasets/spacesurfer/ph2-dataset/) (200 images)
+### Supported Datasets
+
+1. **ISIC-2017 Segmentation Dataset**
+   - 2,000 dermoscopic images with ground truth masks
+   - [Download from ISIC Archive](https://challenge.isic-archive.com/data/)
+   
+2. **ISIC-2018 Task 1: Lesion Boundary Segmentation**
+   - 3,694 dermoscopic images with pixel-level annotations
+   - [Download from ISIC Archive](https://challenge.isic-archive.com/data/)
+   
+3. **PH2 Dataset**
+   - 200 dermoscopic images from Pedro Hispano Hospital
+   - [Download Link](https://www.fc.up.pt/addi/ph2%20database.html)
+
+### Directory Structure
+
+After downloading, organize the datasets as follows:
+
+```
+ULS-MSA/
+├── data/
+│   ├── ISIC2017/
+│   │   ├── images/
+│   │   └── masks/
+│   ├── ISIC2018/
+│   │   ├── images/
+│   │   └── masks/
+│   └── PH2/
+│       ├── images/
+│       └── masks/
+├── models/
+├── utils/
+└── train.py
+```
 
 ---
 
