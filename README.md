@@ -67,9 +67,9 @@ EPA-Net excels at defining complex lesion structures with sharper boundaries and
 
 We employ three publicly available benchmarks. Please place them in the following directory structure:
 
-- **ISIC-2017:** [Kaggle Link](https://www.kaggle.com/) (2,000 images)
-- **ISIC-2018:** [Kaggle Link](https://www.kaggle.com/) (3,694 images)
-- **PH2:** [Kaggle Link](https://www.kaggle.com/) (200 images)
+- **ISIC-2017:** [ISIC-2017](https://www.kaggle.com/datasets/johnchfr/isic-2017/) (2,000 images)
+- **ISIC-2018:** [ISIC-2018]([https://www.kaggle.com/](https://www.kaggle.com/datasets/johnchfr/isic-2018)/) (3,694 images)
+- **PH2:** [PH2](https://www.kaggle.com/datasets/spacesurfer/ph2-dataset/) (200 images)
 
 ---
 
