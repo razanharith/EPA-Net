@@ -101,6 +101,46 @@ ULS-MSA/
 ├── utils/
 └── train.py
 ```
+---
+
+## 🎯 Training
+
+To train ULS-MSA on a specific dataset: 
+
+```bash
+# Train on ISIC-2017
+python train.py --dataset ISIC2017 --epochs 100 --batch_size 16
+
+# Train on ISIC-2018
+python train.py --dataset ISIC2018 --epochs 100 --batch_size 16
+
+# Train on PH2
+python train.py --dataset PH2 --epochs 100 --batch_size 8
+```
+
+### Training Options
+- `--dataset`: Dataset name (ISIC2017, ISIC2018, PH2)
+- `--epochs`: Number of training epochs (default: 100)
+- `--batch_size`: Batch size (default: 16)
+- `--lr`: Learning rate (default: 0.001)
+- `--save_path`: Path to save trained models
+
+---
+
+## 🧪 Evaluation
+
+To evaluate a trained model:
+
+```bash
+python evaluate.py --dataset ISIC2017 --model_path checkpoints/best_model.pth
+```
+
+This will compute:
+- Mean Intersection over Union (mIoU)
+- F1-Score (Dice Coefficient)
+- Precision
+- Recall
+- Inference time per image
 
 ---
 
