@@ -79,15 +79,6 @@ We employ three publicly available benchmarks. Please place them in the followin
 
 If you find this work useful for your research, please cite our manuscript:
 
-```bibtex
-@article{alharith2025epanet,
-  title={A Modular Attention Network for Skin Lesion Segmentation in Resource-Limited Clinical Settings},
-  author={Alharith, Razan and Zhang, Jiashu and Al-Huda, Zaid and Ibrahim, Ashraf Osman},
-  journal={Neural Networks (Submitted)},
-  year={2025}
-}
-```
-
 ---
 
 ## ✉️ Contact
