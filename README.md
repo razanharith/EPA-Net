@@ -17,13 +17,11 @@ EPA-Net is a novel modular framework designed to provide high-fidelity medical s
 EPA-Net achieves a balance between accuracy and efficiency through four specialized modules:
 
 1. **Concurrent Feature Extraction Module (CFEM):** Maximizes usable features at each layer while minimizing network depth to enhance gradient flow.
-
 2. **Boundary Detection Module (BDM):** A trainable, lightweight module that autonomously learns edge features using Difference of Gaussian (DoG) and Laplacian of Gaussian (LoG) operators without needing separate edge labels.
-
 3. **Adaptive Dilation and Focus Module (ADFM):** Utilizes multi-scale dilated convolutions to focus on critical lesion characteristics without high computational cost.
-
 4. **Feature Compression and Fusion Module (FCFM):** Combines multi-scale features to prevent spatial information loss during down-sampling.
 
+![Framework](framework.jpg)
 ---
 
 ## 📊 Performance Results
