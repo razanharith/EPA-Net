@@ -5,6 +5,7 @@ This is the official implementation of EPA-Net (Efficient Pyramid Attention Netw
 **"A Modular Attention Network for Skin Lesion Segmentation in Resource-Limited Clinical Settings"**
 
  **Submittied to:** [Cluster Computing]
+ 
  **Key Highlights:** 0.82M Parameters | 12.98 GFLOPs | 0.0333s Inference Time
 
 EPA-Net is a novel modular framework designed to provide high-fidelity medical segmentation while remaining highly parameter-efficient (41x more efficient than H2Former), enabling AI-driven diagnosis on non-specialized hardware in rural or low-resource clinics.
