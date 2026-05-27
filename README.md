@@ -6,7 +6,7 @@ EPA-Net (Efficient Pyramid Attention Network) is a modular encoder-decoder netwo
 
 ## Architecture
 
-![EPA-Net Architecture](Framework.png)
+![EPA-Net Architecture](framework.png)
 
 EPA-Net is built on a hierarchical encoder-decoder framework with an explicitly modular design: rather than using a single large mechanism, the segmentation task is divided into four sub-tasks, each handled by a dedicated lightweight module.
 
