@@ -1,4 +1,4 @@
-# EPA-Net: A Modular Attention Network for Skin Lesion Segmentation in Resource-Limited Clinical Settings
+# EPA-Net: Implementation and Experimental Configuration for Boundary-Aware Lightweight Skin Lesion Segmentation
 
 ## Overview
 
